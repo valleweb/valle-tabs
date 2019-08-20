@@ -50,8 +50,9 @@ The following custom properties and mixins are available for styling:
 Custom property                | Default  | Description
 :---                           |:---      |:---
 --color-link       						 | #757575  | Text color default
---color-link-active          | #6200ee  | Text color when link is active
+--color-link-active            | #6200ee  | Text color when link is active
 --background-link              | #fff     | Background color link
+--background-color-link-active | #fff     | Active background color link
 
 ## &lt;valle-tab&gt;
 
