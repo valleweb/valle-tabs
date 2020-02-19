@@ -1,0 +1,42 @@
+{
+  "name": "@valle/valle-tabs",
+  "description": "Awesome valle-tabs - Web Component using Polymer 3",
+  "version": "1.0.0",
+  "authors": [
+    "valleweb"
+  ],
+  "main": "valle-tabs.js",
+  "homepage": "https://github.com/valleweb/valle-tabs",
+  "bugs": {
+    "url": "https://github.com/valleweb/valle-tabs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valleweb/valle-tabs"
+  },
+  "keywords": [
+    "polymer",
+    "polymer-3",
+    "web-components",
+    "valle-tabs"
+  ],
+  "license": "MIT",
+  "demos": {
+    "demo": "demo/index.html"
+  },
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0"
+  },
+  "devDependencies": {
+    "@polymer/iron-test-helpers": "^3.0.1",
+    "@polymer/iron-demo-helpers": "^3.1.0",
+    "@polymer/test-fixture": "^4.0.2",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "wct-mocha": "^1.0.1"
+  },
+  "scripts": {
+    "start": "polymer serve"
+  }
+}

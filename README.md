@@ -1,23 +1,28 @@
 # valle-tabs
 
-> Awesome valle tabs
+> Awesome valle-tabs - Web Component using Polymer 3
 
-[![Travis CI Status](https://travis-ci.org/valleweb/valle-tabs.svg?branch=master)](https://travis-ci.org/valleweb/valle-tabs)
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/valleweb/valle-tabs)
+[![npm](https://img.shields.io/npm/v/@valle/valle-tabs.svg)](https://www.npmjs.com/package/@valle/valle-tabs)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@valle/valle-tabs)
 
 ## How to install and use:
 
-1 - Install the element using [Bower](http://bower.io/):
+1 - Install the element using [Yarn](http://yarn.io/):
 
 ```sh
-$ bower install valle-tabs --save
+$ yarn add @valle/valle-tabs
 ```
 
 2 -  Import the element:
 
 ```html
-<link rel="import" href="bower_components/valle-tabs/valle-tabs.html">
-<link rel="import" href="bower_components/valle-tabs/valle-tab.html">
+<script type="module" src="node_modules/@valle/valle-tabs/valle-tabs.js"></script>
+```
+
+or in your javascript file
+
+```js
+import "@valle/valle-tabs/valle-tabs.js";
 ```
 
 3 - Start using it!
@@ -26,7 +31,7 @@ $ bower install valle-tabs --save
 ```
 <custom-element-demo>
   <template>
-    <link rel="import" href="valle-tabs.html">
+    <script type="module" src="valle-tabs.js"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
@@ -72,26 +77,25 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11+ | Latest ✔
 
 ## Development
 
-1 - Install [Bower](http://bower.io/) & [Polymer-CLI](https://www.polymer-project.org/1.0/docs/tools/polymer-cli):
+1 - Verify if you have [node](http://nodejs.org/) and [yarn](http://yarn.io/) installed.
+
+2 - Install [Polymer-CLI](https://www.polymer-project.org/3.0/docs/tools/polymer-cli):
 
 ```sh
-$ [sudo] yarn global add bower polymer-cli
+$ [sudo] yarn global add polymer-cli
 ```
 
-2 - Install local dependencies:
+3 - Install local dependencies:
 
 ```sh
-$ bower install
+$ yarn
 ```
 
-3 - Start the development server:
+4 - Start the development server:
 
 ```sh
-$ polymer serve
+$ yarn start
 ```
-
-Go to [localhost:8080/components/valle-tabs/](http://localhost:8080/components/valle-tabs/)
-
 
 ## Versioning
 

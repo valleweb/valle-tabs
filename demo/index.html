@@ -1,76 +1,64 @@
 <!doctype html>
-
 <html lang="en">
-
   <head>
-    <title>valle-tabs demo</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-		<link rel="import" href="../valle-tabs.html">
-		<link rel="import" href="../valle-tab.html">
-  </head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-  <body>
+    <title>valle-tabs demo</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module">
+      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+      import '@polymer/iron-demo-helpers/demo-snippet';
+    </script>
+
+    <script type="module" src="../valle-tabs.js"></script>
 
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles">
-        .vertical-section-container {
-          max-width: 500px;
-        }
       </style>
     </custom-style>
+  </head>
 
-    <main class="vertical-section-container centered">
-      <h1>valle-tabs demo</h1>
+  <body>
+    <div class="vertical-section-container centered">
+      <h1>All valle-tabs demo</h1>
 
-      <!-- Default - demo
-      ========================= -->
-
-      <h2>Default</h2>
-
-      <demo-snippet class="centered-demo">
+      <!-- Default -->
+      <h3>Default</h3>
+      <demo-snippet>
         <template>
-
           <valle-tabs>
 						<valle-tab title="tab 1">Example 1</valle-tab>
 						<valle-tab title="tab 2">Example 2</valle-tab>
 						<valle-tab title="tab 3">Example 3</valle-tab>
 						<valle-tab title="tab 4">Example 4</valle-tab>
 					</valle-tabs>
-
         </template>
-			</demo-snippet>
-			
-			<!-- Custom style - demo
-      ========================= -->
+      </demo-snippet>
 
-      <h2>Custom style</h2>
-
-      <demo-snippet class="centered-demo">
+      <!-- Custom style -->
+      <h3>Custom style</h3>
+      <demo-snippet>
         <template>
-
-					<style is="custom-style">
+          <style is="custom-style">
             .custom-style {
               --color-link: #CDB5CD;
 							--color-link-active: #C71585;
 							--background-link: #E6E6FA;
             }
-					</style>
-					
+          </style>
+
           <valle-tabs class="custom-style">
 						<valle-tab title="tab 1">Example 1</valle-tab>
 						<valle-tab title="tab 2">Example 2</valle-tab>
 						<valle-tab title="tab 3">Example 3</valle-tab>
 						<valle-tab title="tab 4">Example 4</valle-tab>
 					</valle-tabs>
-
         </template>
       </demo-snippet>
 
-    </main>
-
+    </div>
   </body>
 </html>
